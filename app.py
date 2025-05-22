@@ -7,8 +7,8 @@ import re
 import string
 
 # Load model
-with open("spam_classifier.pkl", "rb") as f:
-    model = pickle.load(f)
+ with open("spam_classifier.pkl", "rb") as f:
+        model = pickle.load(f)
 
 # Preprocessing function
 def preprocess(text):
