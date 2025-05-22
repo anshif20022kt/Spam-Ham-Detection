@@ -1,14 +1,13 @@
 # -*- coding: utf-8 -*-
 
-
 import streamlit as st
 import pickle
 import re
 import string
 
 # Load model
- with open("./spam_classifier.pkl", "rb") as f:  
-        model = pickle.load(f)
+with open("./spam_classifier.pkl", "rb") as f:  
+    model = pickle.load(f)
 
 # Preprocessing function
 def preprocess(text):
